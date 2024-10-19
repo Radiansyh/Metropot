@@ -1,0 +1,262 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3AB795; 
+  }
+
+/* navbar */
+nav .nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    font-family: 'arista-pro';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+nav .nav-wrapper .nav-icon{
+    width: calc(8% + 48px);
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+nav .nav-wrapper .nav-icon img{
+    width: 100%;
+}
+
+nav .nav-wrapper .nav-items{
+    width: 67%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+nav .nav-wrapper .nav-items ul{
+    display: flex;
+    list-style: none;
+    gap: 1.3em;
+}
+
+nav .nav-wrapper .nav-items ul li{
+    background-color: #3AB795;
+    padding: 5px 8px;
+    border-radius: 18px;
+    box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+
+nav .nav-wrapper .nav-items ul li.active{
+    background-color: #236F53;
+    color: #fafafa;
+    font-weight: bold;
+}
+
+nav .nav-wrapper .nav-items ul li a{
+    text-decoration: none;
+    color: #40271D;
+}
+
+.side-fix ul li a{
+    text-decoration: none;
+    color: #40271D;
+}
+
+
+nav .nav-wrapper .nav-items ul li div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-wrapper .nav-items ul li div span{
+    text-align: center;
+    margin-top: 5px;
+}
+
+nav .nav-wrapper .nav-items ul li div i{
+    font-size: 13px;
+    margin-left: 15px;
+    color: #236F53;
+    background-color: #F3F0BB;
+    padding:4px;
+    border-radius: 50%;
+}
+
+nav .nav-wrapper .nav-contact{
+    margin-right: 2.7%;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-wrapper .nav-contact a{
+    background-color: #236F53;
+    text-decoration: none;
+    color: #fafafa;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+
+nav .nav-wrapper .nav-contact a span{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+#hiddenContact{
+    float: right;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+#hiddenContact .toggle{
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #236F53;
+    margin-top: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+}
+.let{
+    position: absolute;
+    right: 20px;
+    top: 66px;
+    padding:20px 10px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #bebebe,
+                 -5px -5px 10px #ffffff;
+    display: none;
+}
+
+.let a{
+    text-decoration: none;
+    color: rgb(23, 23, 23);
+}
+
+/* End Nav */
+
+/* Side Bar */
+.side-fix{
+    position: fixed;
+    font-family: 'Montserrat';
+    margin-top: 47px;
+    margin-left: 50px;
+    color: #40271D;
+    z-index: 2;
+    width: 15%;
+    height: 26%;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.side-fix-show{
+    background-color: #fafafa;
+    padding: .5em 1em;
+    border-radius: 1em;
+    height: 26%;
+}
+
+.side-fix i{
+    position: absolute;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    transition: padding 1s ease-in-out, font-size 1s ease-in;
+}
+
+.side-fix i.minimal-border {
+    padding: 7px 10px;
+    font-size: 25px;
+}
+
+
+.side-fix ul{
+    margin-top: 48px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    max-height: 400px; /* Adjust this value based on your list */
+    opacity: 1;
+    overflow: hidden;
+}
+
+.side-fix ul.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+.side-fix ul li.active{
+    font-weight: bold;
+}
+/* End Side Bar */
+section .section-title{
+    font-family: 'Arista-pro';
+    width: max-content;
+    align-self: flex-end;
+    font-size: 2rem;
+    color: #236F53;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: 1.7em;
+    margin-right: 9.5%;
+}
+
+
+section .section-title a{
+    font-family: 'Montserrat';
+    align-self: flex-end;
+    text-decoration: none;
+    color: #40271D;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border: 1.5px solid #40271D;
+    padding: 5px 17px;
+    border-radius: 30px;
+}
+
+.section-title a{
+    transition: .5s;
+}
+
+.section-title a:hover{
+    background-color: #236F53;
+    color: #fafafa;
+    border: 2px solid #236F53;
+}
+
+.side-fix li:hover{
+    font-weight: 600;
+    cursor: pointer;
+}

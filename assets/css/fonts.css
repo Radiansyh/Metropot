@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'arista-pro';
+    src: url(../fonts/arista_pro/Arista-Pro-Light-trial.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'arista-pro';
+    src: url(../fonts/arista_pro/Arista-Pro-Bold-trial.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'arista-pro';
+    src: url(../fonts/arista_pro/Arista-Pro-Fat-trial.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}

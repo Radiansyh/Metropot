@@ -1,0 +1,846 @@
+@import url(fonts.css);
+
+/* Main */
+
+html{
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+main .main-text{
+    width: 50em;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-left: 2.5%;
+}
+
+main .main-text h1{
+    font-family: 'arista-pro';
+    font-size: 4rem;
+    color: #236F53;
+}
+
+main .main-text h1:first-child{
+    align-self: center;
+}
+
+main .main-text .sub-main-text{
+    display: flex;
+}
+
+main .main-text .sub-main-text span{
+    background-color: #87C38F;
+    color: #fafafa;
+    padding: 5px 20px;
+    border-radius: 100px;
+    box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+
+main .main-text .sub-main-text h1{
+    width: 69%;
+}
+
+main .main-text .sub-main-text div{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+}
+
+main .main-text .sub-main-text div a{
+    font-size: 38px;
+    color: #236F53;
+}
+
+main .main-text .sub-main-text div a{
+    filter: drop-shadow(  25px 15px 10px #bebebe);
+    animation: moving-shadow 3s ease-in-out infinite;
+}
+
+@keyframes moving-shadow {
+    0%{
+        filter: drop-shadow(  20px 10px 10px #bebebe);
+    }
+    50%{
+        filter: drop-shadow(  10px 20px 10px #bebebe);
+    }
+    100%{
+        filter: drop-shadow(  20px 10px 10px #bebebe);
+    }
+}
+
+main .main-wrap-down{
+    display: flex;
+    margin-top: 4.5em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main-wrap-down .wrapper-elm{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+main .main-wrap-down .image-container{
+    background-image: url(../images/urban-farming.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: -250px;
+    width: 75vw;
+    height: calc(190px + 2.3vw);
+    justify-self: center;
+    align-self: center;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow:  7px 7px 14px #d1d1d1,
+    -7px -7px 14px #ffffff;
+}
+
+main .main-wrap-down .image-container .text-info{
+    padding: 1.5em 6%;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    color: #F3F0BB;
+    opacity: .7;
+}
+
+main .main-wrap-down .image-container .button-right{
+    color: #fafafa;
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    opacity: .8;
+}
+
+main .main-wrap-down .long-text-info h1{
+    color: #40271D;
+}
+
+main .main-wrap-down .long-text-info span{
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+main .main-wrap-down .long-text-info{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -12%;
+    margin-left: 6%;
+    width: 40%;
+    background-color: #F3F0BB;
+    font-family: 'Montserrat';
+    padding: 1.5em 1.5em;
+    text-align: justify;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    box-shadow:  5px 8px 10px #3c3c3c72;
+    transition: 1s;
+}
+
+main .main-wrap-down .wrapper-elm:hover .long-text-info{
+    box-shadow: none;
+    margin-bottom: calc(-12% - 8px);
+    margin-left: calc(6% + 5px);
+}
+
+main .main-wrap-down .wrapper-elm .button-main-down{
+    align-self: flex-end;
+    display: flex;
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+
+main .main-wrap-down .wrapper-elm .button-main-down a{
+    padding: 10px 20px;
+    border: 1.5px solid #232323;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: #232323;
+    
+}
+
+main .main-wrap-down .wrapper-elm .button-main-down a:nth-child(2){
+    background-color: #236F53;
+    color: #fafafa;
+}
+
+/* End Main */
+
+/* Batas */
+
+.wrapper-batas{
+    margin-top: 55px;
+    background-color: #F3F0BB;
+}
+
+.marquee {
+    background-color: #236F53;
+    color: #fafafa;
+    font-family: 'Arista-pro';
+    font-weight: 600;
+  }
+
+  .marquee-content{
+    overflow: clip;
+  }
+  
+  .marquee-content-track{
+    display: flex;
+    padding-left: .5rem;
+    width: max-content;
+    animation: marquee-text 15s linear infinite;
+  }
+
+  .marquee-content div {
+    position: relative;
+    margin-right: 3px;
+    height: 50px;
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+
+  .marquee-content div span{
+    margin-top: 3px;
+}
+
+@keyframes marquee-text {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+section .wrapper-batas .wrap-text-batas{
+    display: flex;
+    padding: 3em 1em;
+}
+
+.content-bt {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #236F53;
+    font-family: 'arista-pro';
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    row-gap: 1em;
+}
+
+.benefit {
+    border: 2px solid #40271D;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: .9rem;
+    font-family: 'Montserrat';
+    color: #40271D;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.benefit:hover{
+    border: 2px solid #236F53;
+    background-color: #236F53;
+    color: #fafafa;
+}
+
+.footer-text-bt {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b713d;
+    font-family: 'arista-pro';
+}
+
+/* End Batas */
+
+/* Section Method */
+
+section .wrap-method-urban{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+section .wrap-method-urban .title-method a i{
+    font-size: 1.2rem;
+}
+
+section .wrap-method-urban .title-method span{
+    background-color: #87C38F;
+    padding: 5px 15px;
+    color: #fafafa;
+    border-radius: 30px;
+}
+
+.slider {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.methods-container {
+    width: 73%; /* Tentukan lebar container */
+    overflow: hidden; /* Sembunyikan elemen di luar area */
+    font-family: 'Montserrat';
+}
+
+.methods {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 1em; /* Jarak antar elemen */
+}
+
+.method {
+    flex: 0 0 31.8%; /* Lebar setiap elemen agar 3 elemen pas terlihat */
+    text-align: center;
+    background-color: #37a17a;
+    height: 350px;
+    border-radius: 20px 30% 20px 20px;
+}
+
+.wrapper-slide-item,
+.crops-content .left-crops{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.method h2{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+.wrapper-slide-item h2,
+.crops-content .left-crops h1{
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 25px;
+    color: #FAFAFA;
+}
+
+.wrapper-slide-item div,
+.crops-content .left-crops div{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper-slide-item div span,
+.crops-content .left-crops div span{
+    border: 1px solid #232323;
+    padding: 5px 30px;
+    background-color: #fafafa;
+    border-radius: 25px;
+    color: #236F53;
+    font-size: .9rem;
+    height: max-content;
+}
+
+.wrapper-slide-item div a,
+.crops-content .left-crops div a{
+    color: #236F53;
+    font-size: 2.3rem;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 73%;
+    transform: translateY(-50%);
+    color: #236F53;
+    border: none;
+    background: none;
+    font-size: 2.7rem;
+    right: 9.6%;
+    cursor: pointer;
+}
+
+#prev{
+    margin-top: 50px;
+}
+
+.dot{
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+    font-size: 1rem;
+    color: #A0E8AF;
+}
+
+.dot div:nth-child(1){
+    color: #236F53;
+}
+
+.method-1{
+    background-image: url(../images/aquaponik.jpg);
+    background-size: cover;
+}
+.method-2{
+    background-image: url(../images/hidroponik.jpg);
+    background-size: cover;
+    background-position-x: -100px;
+}
+.method-3{
+    background-image: url(../images/vertikultur.jpg);
+    background-size: cover;
+}
+.method-4{
+    background-image: url(../images/tamanatap.jpg);
+    background-size: cover;
+}
+/* End Method */
+
+/* Crops */
+
+section .section-crops{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .section-crops .crops-content{
+    background-color: #87C38F;
+    display: flex;
+    width: 88%;
+    height: 300px;
+    font-family: 'Montserrat';
+    border-radius: 1.2em 150px 1.2em 1.2em;
+    overflow-x: hidden;
+}
+
+.crops-content .left-crops{
+    width: 45%;
+}
+
+.crops-content .right-crops{
+    background-color: #232323;
+    width: 60%;
+    border-radius: 15px;
+}
+
+.crops-content .right-crops{
+    background-image: url(../images/tanamanherbal.jpg);
+    background-size: cover;
+}
+.cc-1 .right-crops{
+    background-image: url(../images/organicfood.jpg);
+}
+
+.crops-content .left-crops div span{
+    padding: 5px 70px;
+    border: none;
+}
+
+.crops-content .left-crops div a{
+    font-size: 3rem;
+}
+
+/* End Crops */
+
+/* LB */
+
+.wrapper-lb .round-lb{
+    width: 40px;
+    height: 40px;
+    background-color: #fafafa;
+    box-shadow: inset 0px 0px 5px 2px rgba(35,111,83,.5);
+    border-radius: 50%;
+}
+
+.wrapper-lb{
+    padding: 4em;
+}
+
+.wrapper-lb .header-lb{
+    display: flex;
+    align-items: center;
+    font-family: 'Arista-pro';
+    gap: 1em;
+}
+
+.wrapper-lb .header-lb h1{
+    color: #236F53;
+    font-size: 2rem;
+}
+
+.wrapper-lb .title-lb h1{
+    font-size: 3.5rem;
+}
+
+.wrapper-lb .header-lb h1 span{
+    background-color: #87C38F;
+    padding: 5px 10px;
+    color: #fafafa;
+    border-radius: 30px;
+}
+
+.wrapper-lb .line-lb{
+    width: 2px;
+    height: 120px;
+    background-color: #87C38F;
+    margin-left: 1.6%;
+}
+
+.content-lb{
+    display: flex;
+}
+
+.content-lb .text-lb{
+    display: flex;
+    gap: 2.8em;
+}
+
+.text-lb span{
+    margin-top: 2%;
+    width: 50%;
+    font-family: 'open-sans';
+    font-weight: lighter;
+    font-size: .9rem;
+}
+
+.text-lb-2 span{
+    width: 76%;
+}
+
+.text-lb .line-2{
+    height: 260px;
+}
+
+.text-lb .line-3{
+    height: 32em;
+}
+
+.text-lb .line-4{
+    height: 300px;
+}
+
+.image-1-lb{
+    background-image: url(../images/crowdJkt.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 39%;
+    right: 0;
+    margin-top: -2%;
+    height: 230px;
+    border-radius: 200px 0 0 200px;
+}
+
+.image-2-lb{
+    background-image: url(../images/polusiJkt.jpg);
+    background-size: cover;
+    background-position: 10px;
+    position: absolute;
+    width: 71%;
+    height: 250px;
+    margin-top: 10.5em;
+    left: 8%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(135,195,143,1);
+}
+
+.image-3-lb{
+    background-image: url(../images/lahanHijauJkt.jpg);
+    background-size: cover;
+    background-position-x: -40px;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background-color: #232323;
+    right: 18em;
+    border-radius: 100%;
+    box-shadow: 5px 10px 30px 0px rgba(135,195,143,1);
+}
+
+.wrapper-solusi-lb{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 4em;
+    padding-bottom: 0;
+    gap: 2em;
+}
+
+.wrapper-solusi-lb .solusi{
+    display: flex;
+    font-family: 'open-sans';
+    font-weight: lighter;
+    gap: 3em;
+    align-items: center;
+}
+
+.img-solusi{
+    width: 27em;
+    height: 200px;
+    background-color: #232323;
+    border-radius: 40px;
+}
+
+.solusi div.text-sol{
+    width: 50%;
+}
+
+.solusi:nth-child(2) .text-sol{
+    text-align: justify;
+}
+
+
+/* End LB */
+
+/* Komun */
+
+.wrapper-komun .section-title{
+    margin-left: 10%;
+}
+.container {
+    width: 90vw; /* Menggunakan 90% dari lebar viewport */
+    max-width: 100%; /* Agar tetap responsif dan tidak melebihi layar */
+    margin: auto; /* Agar elemen berada di tengah */
+    overflow-x: hidden; /* Memastikan tidak ada scroll horizontal */
+}
+.layout {
+    font-family: 'Montserrat';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 100%; /* Batasi lebar layout agar tidak meluas melebihi 90vw */
+    overflow-x: hidden; /* Hindari elemen melampaui batas viewport */
+}
+
+.container .layout .left-column {
+    padding-right: 10px;
+}
+
+.container .layout .right-column {
+    padding-left: 10px;
+    max-width: 100%; /* Pastikan konten tidak meluas keluar dari grid */
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.community-card {
+    max-height: 300px; 
+    overflow-y: auto;  
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.container .layout .card {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.container .layout .card-content {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.container .layout .card img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.container .layout .card button {
+    margin-top: 10px;
+}
+
+.container .layout .card:hover {
+    transform: scale(1.02);
+}
+
+.container .layout h2 {
+    color: #236F53;
+    font-family: 'Arista-pro';
+}
+
+.container .layout button {
+    background-color: #236F53;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container .layout button:hover {
+    background-color: #2e9772;
+}
+
+/* Slider */ 
+.container .layout .community-card {
+    max-width: 100%; /* Pastikan community card tetap dalam batas container */
+}
+
+.container .layout .slider {
+    max-width: 55%; /* Pastikan slider tidak melampaui container */
+    overflow-x: hidden;
+}
+
+.container .layout .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    max-width: 100%; /* Batasi lebar slides */
+}
+
+.container .layout .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .layout .slide img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Navigation buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #236F53;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* FAQ kata gue teh */
+.faq-container {
+    margin-top: 20px;
+    width: 55%;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.faq-button {
+    background-color: #236F53;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.faq-content {
+    display: none; 
+    padding: 10px;
+}
+
+/* End Komun */
+
+/* Responsive Nav */
+
+@media screen and (max-width: 900px){
+
+    nav .nav-wrapper{
+       font-size: 12px; 
+    }
+
+    nav .nav-wrapper .nav-items{
+        width: 95%;
+    }
+
+    nav .nav-wrapper .nav-items ul li{
+        padding: 2px 8px;
+    }
+
+    nav .nav-wrapper .nav-items ul li div span{
+        margin-top: 2px;
+    }
+
+    nav .nav-wrapper .nav-items ul li div i{
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav .nav-wrapper .nav-icon img{
+        width: 70%;
+    }
+    nav .nav-wrapper .nav-items{
+        width: 100%;
+    }
+
+    #hiddenContact{
+        display: block;
+    }
+
+    nav .nav-wrapper .nav-contact{
+        display: none;
+    }
+
+    nav .nav-wrapper .nav-items ul li div i{
+        margin-left: 10px;
+        font-size: 10px;
+        padding: 4px;
+    }
+}

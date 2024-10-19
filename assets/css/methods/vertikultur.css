@@ -1,0 +1,268 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title{
+    align-self: flex-end;
+    margin-right: -5%;
+}
+
+main .section-title{
+    font-family: 'Arista-pro';
+    width: max-content;
+    align-self: flex-end;
+    font-size: 2rem;
+    color: #236F53;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: 1.7em;
+    margin-right: 7.5%;
+}
+
+main .section-title a{
+    font-family: 'Montserrat';
+    align-self: flex-end;
+    text-decoration: none;
+    color: #40271D;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border: 1.5px solid #40271D;
+    padding: 5px 17px;
+    border-radius: 30px;
+}
+
+.wrapper-content-cp{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat';
+    height: 20em;
+}
+
+.small-text{
+    position: absolute;
+    margin-top: 23%;
+    left: 30%;
+    display: flex;
+    width: 17.5%;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.small-text a{
+    color: #236F53;
+    font-size: 2.5rem;
+}
+
+.img-crops{
+    width: 40%;
+}
+
+.right-cp {
+    width: 40%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.wrap-button-cp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.button-cp{
+    width: 48%;
+    height: 85px;
+    background-color: #236F53;
+    border-radius: 15px;
+    padding: .5em 1em;
+    color: #fafafa;
+}
+
+.button-c:nth-child(3){
+    position: relative;
+    z-index: 100;
+}
+
+.recomend{
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    color: #236F53;
+    background-color: #fafafa;
+    border: 2px solid #236F53;
+}
+
+.manfaat,.sistem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width ease 1.5s;
+}
+
+.button-cp i{
+    font-size: 1.4rem;
+    align-self: flex-end;
+    margin-top: 22px;
+}
+
+.recomend span{
+    font-size: .7rem;
+}
+
+.wide-cp{
+    position: absolute;
+    width: 41%;
+    height: 21em;
+    top: 14em;
+    background-color: #F3F0BB;
+    color: #40271D;
+    padding: 1.5em 2em;
+    justify-content: center;
+}
+
+.manfaat-full{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.wide-cp .title{
+    margin-top: -10%;
+    margin-bottom: 1em;
+}
+
+.wide-cp span{
+    font-weight: 600;
+}
+
+.manfaat-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.manfaat-item .img-manfaat{
+    width: 10em;
+    height: 2.5em;
+    background-color: #236F53;
+}
+
+.manfaat-item .love{
+    height: 2.5em;
+    width: 3em;
+    color: #fafafa;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.love i{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.love-1{
+    background-color: #87C38F;
+}
+.love-2{
+    background-color: #71A378;
+}
+.love-3{
+    background-color: #236F53;
+}
+
+.manfaat-item .text-manfaat{
+    background-color: #fafafa;    
+    padding: 10px;
+    width: max-content;
+    width: 90%;
+}
+
+.manfaat-item .text-manfaat span{
+    display: flex;
+    font-size: .5rem;
+    font-weight: light;
+}
+
+.sistem-item{
+    opacity: 0;
+}
+
+.content {
+    max-height: 200px; 
+    overflow-y: auto; 
+    padding: 16px;
+    background-color: #F3F0BB;
+}
+
+.content h4{
+    margin-top: 10px;
+}
+
+.image-container {
+    position: relative;
+    
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    text-align: left;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.show-manf{
+    opacity: 1;
+}
+
+.back{
+    border: 1.5px solid #40271D;
+    display: flex;
+    width: max-content;
+    padding: 8px 15px;
+    border-radius: 50px;
+    position: absolute;
+    left: 3%;
+    top: 15%;
+}
+
+.back a{
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #40271D;
+}

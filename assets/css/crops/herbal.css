@@ -1,0 +1,211 @@
+.tooltip-inner {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #40271D;
+    text-align: center;
+    background-color: #F3F0BB;
+    border-radius: 0.25rem;
+    font-family: 'Montserrat';
+    font-size: .8rem;
+    box-shadow:  5px 5px 10px #cfcc9f,
+             -5px -5px 10px #ffffd7;
+  }
+
+.back{
+    border: 1.5px solid #4f3930;
+    display: flex;
+    width: max-content;
+    padding: 8px 15px;
+    border-radius: 50px;
+    position: absolute;
+    left: 3%;
+    top: 15%;
+}
+
+.back a{
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #40271D;
+    font-size: .8rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title{
+    align-self: flex-end;
+    margin-right: -5%;
+}
+
+main .section-title{
+    font-family: 'Arista-pro';
+    width: max-content;
+    align-self: flex-end;
+    font-size: 2rem;
+    color: #236F53;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: .7em;
+    margin-right: 7.5%;
+}
+
+main .wrapper-main-content{
+    display: flex;
+    font-family: 'Montserrat';
+    gap: 3em;
+    height: 20em;
+}
+
+main .wrapper-main-content .left-content{
+    width: 47%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.left-content h2{
+    color: #236F53;
+}
+
+.left-content .fun-fact{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 60%;
+    background-color: #F3F0BB;
+    border-radius: 12px;
+}
+
+.fun-fact .button-fc{
+    display: flex;
+    gap: 1em;
+    background-color: #236F53;
+    justify-content: space-between;
+    padding: .5em 1em;
+    color: #fafafa;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.left-content .fun-fact .item-fc{
+    display: none;
+    padding: 0 1.5em 1em 1.5em;
+    font-size: .8rem;
+}
+
+main .wrapper-main-content .right-content{
+    width: 50%;
+    overflow-x: scroll;
+}
+
+main .wrapper-main-content .right-content .right-items{
+    display: flex;
+    gap: 1em;
+    height: 100%;
+    width: max-content;
+}
+
+.right-content .item-r{
+    width: 26em;
+    height: 100%;
+    background-size: cover;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+    justify-content: flex-end;
+    background-position: center;
+    overflow: clip;
+}
+
+.item-r .item-title{
+    background-color: #236F53;
+    display: flex;
+    padding: 1em 2em;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 18px 18px;
+}
+
+.item-title span{
+    font-weight: light;
+    font-size: .8rem;
+    color: #fafafabe;
+}
+
+.item-title .icon-c{
+    display: flex;
+    gap: 1em;
+    font-size: 1.5rem;
+}
+
+.item-title .icon-c i{
+    cursor: pointer;
+}
+
+.item-r .content-item{
+    position: relative;
+    background-color: #F3F0BB;
+    color: #40271D;
+    width:100%;
+    padding: 3em 2em 1em 2em;
+    font-size: .8rem;
+    height: 90%;
+    border-radius: 12px 12px 0 0;
+    
+}
+
+.content-item{
+    display: none;
+}
+
+.peluang-c{
+    color: #fafafa;
+    background-color: #236F53;
+    padding: .5em 2em;
+    height: 0;
+    margin-top: -4%;
+    visibility: hidden;
+    transition: ease-in .5s;
+}
+
+.show-hidden{
+    margin-top: -1%;
+    height: 100%;
+    visibility: visible;
+}
+
+.peluang-c li{
+    font-size: .8rem;
+    list-style:decimal;
+}
+
+.peluang-c h5, .peluang-c ul{
+    margin-bottom: 5px;
+}
+
+main .wrapper-main-content .right-content::-webkit-scrollbar {
+    height: 3px; /* Tinggi scrollbar horizontal */
+}
+
+.item-r:nth-child(1){
+    background-image: url(../../images/crops/basil.jpg);
+}
+
+.item-r:nth-child(2){
+    background-image: url(../../images/crops/daunmint.jpg);
+}
+
+.item-r:nth-child(3){
+    background-image: url(../../images/crops/rosemary.jpg);
+}
+
+.item-r:nth-child(4){
+    background-image: url(../../images/crops/thyme.jpg);
+}
+
+.item-r:nth-child(5){
+    background-image: url(../../images/crops/oregano.jpg);
+}
