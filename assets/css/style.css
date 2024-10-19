@@ -144,7 +144,7 @@ main .main-wrap-down .long-text-info span{
 main .main-wrap-down .long-text-info{
     position: absolute;
     bottom: 0;
-    margin-bottom: -1%;
+    margin-bottom: -5%;
     margin-left: 6%;
     width: 40%;
     background-color: #F3F0BB;
@@ -161,7 +161,7 @@ main .main-wrap-down .long-text-info{
 
 main .main-wrap-down .wrapper-elm:hover .long-text-info{
     box-shadow: none;
-    margin-bottom: calc(-1% - 8px);
+    margin-bottom: calc(-5% - 8px);
     margin-left: calc(6% + 5px);
 }
 
