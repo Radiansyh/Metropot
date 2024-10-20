@@ -6,6 +6,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.nav-items li a{
+    color: #fafafa;
+}
+
 main {
     width: 100%;
     display: flex;
