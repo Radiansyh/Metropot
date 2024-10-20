@@ -588,10 +588,10 @@ section .section-crops .crops-content{
     background-size: cover;
     background-position-x: -40px;
     position: absolute;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     background-color: #232323;
-    right: 13em;
+    right: 8em;
     border-radius: 100%;
     box-shadow: 5px 10px 30px 0px rgba(135,195,143,1);
 }
@@ -839,13 +839,22 @@ footer .wrapper-footer{
 .items-footer h1{
     color: #fafafa;
     width: 30%;
+    margin-top: 1em;
+}
+
+.items-footer .ft-item{
+    align-self: center;
 }
 
 .items-footer ul{
     color: #fafafa;
     list-style: none;
     font-family: 'Montserrat';
-    font-size: .9rem;
+    font-size: 1rem;
+}
+
+.items-footer ul li{
+    margin-bottom: .4em;
 }
 
 .items-footer img{
