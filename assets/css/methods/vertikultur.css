@@ -39,6 +39,7 @@ main .section-title a{
     justify-content: space-evenly;
     font-family: 'Montserrat';
     height: 20em;
+
 }
 
 .small-text{
@@ -265,4 +266,80 @@ main .section-title a{
     font-family: 'Montserrat';
     text-decoration: none;
     color: #40271D;
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper-content-cp{
+        flex-direction: column;
+    }
+
+    .small-text{
+        display: none;
+    }
+
+    .right-cp {
+        width: 90%;
+    }
+
+    .img-crops{
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    .wrap-button-cp{
+        width: 100%;
+    }
+
+    .button-cp{
+        width: 45%;
+    }
+
+    .button-cp:nth-child(3){
+        width: 60%;
+    }
+
+    main .section-title{
+        margin-top: 4em;
+        font-size: 1.5rem;
+    }
+
+    .back{
+        font-size: .8rem;
+    }
+
+    .wide-cp{
+        position: absolute;
+        width: 100%;
+        height: 21em;
+        top: 40em;
+        background-color: #F3F0BB;
+        color: #40271D;
+        padding: 1.5em 2em;
+        justify-content: center;
+    }
+
+    .manfaat,.sistem{
+        transition: none;
+    }
+
+    nav .nav-wrapper .nav-icon img{
+        width: 70%;
+    }
+    nav .nav-wrapper .nav-items{
+        width: 100%;
+    }
+
+    #hiddenContact{
+        display: block;
+    }
+
+    nav .nav-wrapper .nav-contact{
+        display: none;
+    }
+
+    nav .nav-wrapper .nav-items ul li div i{
+        margin-left: 10px;
+        font-size: 10px;
+        padding: 4px;
+    }
 }

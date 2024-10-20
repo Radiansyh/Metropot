@@ -212,3 +212,51 @@ main .wrapper-main-content .right-content::-webkit-scrollbar {
 .item-r:nth-child(5){
     background-image: url(../../images/makanan/timun.jpg);
 }
+
+@media screen and (max-width: 700px) {
+    main .section-title h1{
+        display: none;
+    }
+
+    .wrapper-main-content{
+        margin-top: 2em;
+        flex-direction: column;
+    }
+
+    main .wrapper-main-content .left-content{
+        width: 90%;
+    }
+
+    nav .nav-wrapper .nav-icon img{
+        width: 70%;
+    }
+    nav .nav-wrapper .nav-items{
+        width: 100%;
+    }
+
+    #hiddenContact{
+        display: block;
+    }
+
+    nav .nav-wrapper .nav-contact{
+        display: none;
+    }
+
+    nav .nav-wrapper .nav-items ul li div i{
+        margin-left: 10px;
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    main .wrapper-main-content{
+        height: 100em;
+    }
+    
+    .right-content .item-r{
+        height: 20em;
+    }
+
+    main .wrapper-main-content .right-content{
+        width: 100%;
+    }
+}
