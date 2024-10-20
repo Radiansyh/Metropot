@@ -246,7 +246,7 @@ main .wrapper-main-content .right-content::-webkit-scrollbar {
     }
 
     main .wrapper-main-content{
-        height: 100em;
+        height: 50em;
     }
     
     .right-content .item-r{
