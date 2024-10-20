@@ -45,6 +45,7 @@ main .main-text h1:first-child{
 
 main .main-text .sub-main-text{
     display: flex;
+    flex-direction: row;
 }
 
 main .main-text .sub-main-text span{
@@ -54,6 +55,7 @@ main .main-text .sub-main-text span{
     border-radius: 100px;
     box-shadow:  5px 5px 10px #bebebe,
              -5px -5px 10px #ffffff;
+    
 }
 
 main .main-text .sub-main-text h1{
@@ -311,6 +313,10 @@ section .wrap-method-urban .title-method span{
     border-radius: 30px;
 }
 
+section .section-title h1{
+    font-size: 36px;
+}
+
 .slider {
     width: 100vw;
     position: relative;
@@ -452,7 +458,7 @@ section .section-crops .crops-content{
 }
 
 .crops-content .left-crops{
-    width: 45%;
+    width: 40%;
 }
 
 .crops-content .right-crops{
@@ -467,6 +473,10 @@ section .section-crops .crops-content{
 }
 .cc-1 .right-crops{
     background-image: url(../images/organicfood.jpg);
+}
+
+.cc-1 .left-crops{
+    font-size: 2rem;
 }
 
 .crops-content .left-crops div span{
@@ -651,8 +661,8 @@ section .section-crops .crops-content{
 }
 .layout {
     font-family: 'Montserrat';
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+  
     gap: 20px;
     max-width: 100%; /* Batasi lebar layout agar tidak meluas melebihi 90vw */
     overflow-x: hidden; /* Hindari elemen melampaui batas viewport */
@@ -738,7 +748,7 @@ input[type="text"] {
 }
 
 .container .layout .slider {
-    max-width: 55%; /* Pastikan slider tidak melampaui container */
+    max-width: 60%; /* Pastikan slider tidak melampaui container */
     overflow-x: hidden;
 }
 
@@ -786,7 +796,7 @@ button.next {
 /* FAQ kata gue teh */
 .faq-container {
     margin-top: 20px;
-    width: 55%;
+    width: 60%;
 }
 
 .faq-item {
@@ -892,9 +902,48 @@ footer .wrapper-footer{
         display: none;
     }
 
+    section .section-crops .crops-content{
+        border-radius: 1.2em;
+        height: 250px;
+        justify-content: space-between;
+    }
+
+    .cc-1 .left-crops{
+        margin-right: 1em;
+    }
+
+    .crops-content .right-crops{
+        width: 50%;
+    }
+
+    .crops-content .left-crops h1{
+        font-size: 1.7rem;
+    }
+
+    .wrapper-footer .items-footer{
+        flex-direction: column;
+    }
+    .items-footer h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrap-ft{
+        display: flex;
+        gap: 2em;
+    }
+    .white-logo{
+        width: 50%;
+    }
+    .items-footer img{
+        margin-top: 1em;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    body{
+        width: 100vw;
+    }
     nav .nav-wrapper .nav-icon img{
         width: 70%;
     }
@@ -920,6 +969,113 @@ footer .wrapper-footer{
         display: none;
     }
 
+    main .main-text{
+        width: 100%;
+        gap: 0;
+    }
+
+    main .main-text h1{
+        font-size: 2.2rem;
+    }
+
+    main .main-text .sub-main-text{
+        flex-direction: column;
+    }
+
+    main .main-wrap-down{
+        margin-top: 1em;
+    }
+
+    main .main-text .sub-main-text h1{
+        width: 100%;
+    }
+
+    main .main-text .sub-main-text div{
+        width: 100%;
+        gap: 1em;
+    }
+
+    main .main-wrap-down .image-container{
+        display: none;
+    }
+
+    .side-fix{
+        display: none;
+    }
+
+    main .main-wrap-down .long-text-info{
+        position: relative;
+        margin-bottom: 0;
+        width: 88%;
+    }
+
+    main .main-wrap-down .wrapper-elm .button-main-down{
+        align-self: center;
+    }
+
+    .marquee-content div {
+        font-size: 1rem;
+        height: 38px;
+    }
+
+    .wrapper-lb{
+        padding: 1em;
+    }
+
+    .wrapper-lb .round-lb{
+        width: 30px;
+        height: 30px;
+    }
+
+    .text-lb span{
+        width: 100%;
+    }
+
+    .wrapper-lb .title-lb h1{
+        font-size: 1.8rem;
+    }
+
+    .wrapper-lb .header-lb h1{
+        font-size: 1.5rem;
+    }
+
+    .text-lb .line-3{
+        height: 20em;
+    }
+
+    .solusi div.text-sol{
+        width: 100%;
+    }
+
+    .wrapper-solusi-lb{
+        padding: 1em 1.5em;
+    }
+
+    #prev, #next,
+    .dot{
+        display: none;
+    }
+
+    section .section-title h1{
+        font-size: 1.7rem;
+    }
+
+    .method {
+        height: 400px;
+        background-position: center;
+    }
+    .layout{
+        flex-direction: column;
+    }
+    .faq-container {
+        width: 100%;
+    }.container .layout .slider {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    main .main-wrap-down .wrapper-elm:hover .long-text-info{
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 900px) {
