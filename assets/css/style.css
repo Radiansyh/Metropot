@@ -10,6 +10,10 @@ html{
     color: #fafafa;
 }
 
+.hidden-resp{
+    display: block;
+}
+
 main {
     width: 100%;
     display: flex;
@@ -875,6 +879,11 @@ footer .wrapper-footer{
     nav .nav-wrapper .nav-items ul li div i{
         padding: 2px;
     }
+
+    .hidden-resp{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -898,4 +907,84 @@ footer .wrapper-footer{
         font-size: 10px;
         padding: 4px;
     }
+
+    .hidden-resp{
+        display: none;
+    }
+
 }
+
+@media screen and (max-width: 900px) {
+    .container {
+      max-width: 80vw;
+      padding: 10px;
+    }
+  
+    .header {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    .content {
+      font-size: 1rem;
+      margin: 10px;
+    }
+  
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-item {
+      margin: 10px 0;
+    }
+  
+    .button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Untuk layar dengan lebar maksimal 600px */
+  @media screen and (max-width: 600px) {
+    .container {
+      max-width: 90vw;
+      padding: 5px;
+    }
+  
+    .header {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .content {
+      font-size: 0.9rem;
+      margin: 5px;
+    }
+  
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-item {
+      margin: 5px 0;
+    }
+  
+    .button {
+      padding: 8px 12px;
+      font-size: 0.8rem;
+    }
+  }
