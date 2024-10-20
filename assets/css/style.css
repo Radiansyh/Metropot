@@ -330,6 +330,7 @@ section .wrap-method-urban .title-method span{
 
 .methods {
     display: flex;
+    flex-direction: row;
     transition: transform 0.5s ease-in-out;
     gap: 1em; /* Jarak antar elemen */
 }
@@ -986,5 +987,9 @@ footer .wrapper-footer{
     .button {
       padding: 8px 12px;
       font-size: 0.8rem;
+    }
+
+    .methods{
+        flex-direction: column;
     }
   }
