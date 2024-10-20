@@ -300,8 +300,6 @@ section .wrap-method-urban{
     flex-direction: column;
 }
 
-
-
 section .wrap-method-urban .title-method a i{
     font-size: 1.2rem;
 }
@@ -384,7 +382,7 @@ section .wrap-method-urban .title-method span{
 
 .wrapper-slide-item div a,
 .crops-content .left-crops div a{
-    color: #236F53;
+    color: #fafafa;
     font-size: 2.3rem;
 }
 
