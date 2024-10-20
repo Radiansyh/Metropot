@@ -582,7 +582,7 @@ section .section-crops .crops-content{
     width: 220px;
     height: 220px;
     background-color: #232323;
-    right: 18em;
+    right: 13em;
     border-radius: 100%;
     box-shadow: 5px 10px 30px 0px rgba(135,195,143,1);
 }
@@ -608,6 +608,16 @@ section .section-crops .crops-content{
     height: 200px;
     background-color: #232323;
     border-radius: 40px;
+    background-size: cover;
+}
+
+.solusi .img-solusi{
+    background-image: url(../images/urbanfrming.jpg);
+}
+
+.solusi:nth-child(2) .img-solusi{
+    background-image: url(../images/urbanfrming-2.jpg);
+    background-position-y: -30px;
 }
 
 .solusi div.text-sol{
@@ -796,6 +806,47 @@ button.next {
 }
 
 /* End Komun */
+
+/* Footer */
+
+footer{
+    margin-top: 5em;
+}
+
+footer .wrapper-footer{
+    background-color: #236F53;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 3em 0 2em;
+}
+
+.wrapper-footer .items-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-footer h1{
+    color: #fafafa;
+    width: 30%;
+}
+
+.items-footer ul{
+    color: #fafafa;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-size: .9rem;
+}
+
+.items-footer img{
+    width: 15%;
+}
+
+.white-logo{
+    width: 12%;
+}
+/*  */
 
 /* Responsive Nav */
 
