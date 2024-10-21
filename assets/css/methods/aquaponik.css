@@ -340,4 +340,10 @@ main .section-title a{
         font-size: 10px;
         padding: 4px;
     }
+
+    .button-cp .title{
+        font-size: 1.3rem;
+        justify-self: center;
+        align-self: center;
+    }
 }

@@ -1101,6 +1101,14 @@ footer .wrapper-footer{
     main .main-wrap-down .wrapper-elm:hover .long-text-info{
         margin-bottom: 0;
     }
+
+    .gray-logo{
+        display: none;
+    }
+
+    .wrap-ft{
+        margin-bottom: 2em;
+    }
 }
 
 @media screen and (max-width: 900px) {
