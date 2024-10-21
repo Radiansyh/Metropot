@@ -39,7 +39,7 @@ main .section-title a{
     justify-content: space-evenly;
     font-family: 'Montserrat';
     height: 20em;
-
+    margin-left: 10em;
 }
 
 .small-text{

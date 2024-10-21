@@ -695,6 +695,26 @@ input[type="text"] {
     padding: 10px;
 }
 
+.img-komun{
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-komun-1{
+    background-image: url(../images/komun-1.jpg);
+}
+
+.img-komun-2{
+    background-image: url(../images/komun-2.jpg);
+}
+
+.img-komun-3{
+    background-image: url(../images/komun-3.jpg);
+}
+
 .container .layout .card {
     display: flex;
     align-items: center;
@@ -871,6 +891,11 @@ footer .wrapper-footer{
 
 .white-logo{
     width: 12%;
+}
+
+.wrap-ft{
+    display: flex;
+    gap: 2em;
 }
 /*  */
 
